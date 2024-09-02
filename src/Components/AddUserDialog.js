@@ -14,6 +14,7 @@ export default function AddUserDialog({ open, onClose, roomId }) {
             onClose();
         } catch (error) {
             console.error(error);
+            toast.error('Failed to add user. The user might not be registered.');
         }
     };
     return (
